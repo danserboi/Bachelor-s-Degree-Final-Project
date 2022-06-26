@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_collections"
+            android:icon="@drawable/ic_menu_collections"
+            android:title="@string/collections" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_menu_favorites"
+            android:title="@string/menu_favorites" />
+        <item
+            android:id="@+id/nav_random_quote"
+            android:icon="@drawable/ic_menu_random_quote"
+            android:title="@string/random_quote" />
+        <item
+            android:id="@+id/nav_quote_of_the_day"
+            android:icon="@drawable/ic_menu_quote_of_the_day"
+            android:title="@string/menu_quote_of_the_day" />
+        <item
+            android:id="@+id/nav_add_quote"
+            android:icon="@drawable/ic_baseline_note_add_24"
+            android:title="@string/add_quote" />
+        <item
+            android:id="@+id/nav_my_quotes"
+            android:icon="@drawable/ic_baseline_wallet_24"
+            android:title="@string/my_quotes" />
+    </group>
+
+    <group
+        android:id="@+id/menu_center"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_change_password"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/nav_resend_validation_email"
+            android:icon="@drawable/ic_send"
+            android:title="@string/resend_validation_email" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/logout" />
+    </group>
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_menu_rate"
+            android:title="@string/menu_rate" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_menu_feedback"
+            android:title="@string/menu_feedback" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="@string/menu_about" />
+    </group>
+</menu>

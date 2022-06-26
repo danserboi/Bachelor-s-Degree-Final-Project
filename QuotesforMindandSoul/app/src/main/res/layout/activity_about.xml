@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appDescriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/purpose"
+                android:textAppearance="@style/AboutTitles"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/appDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="@string/app_description" />
+
+            <TextView
+                android:id="@+id/privacyPolicyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/privacy_policy"
+                android:textAppearance="@style/AboutTitles"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/privacyPolicy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="@string/privacy_policy_description" />
+
+            <TextView
+                android:id="@+id/creditsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/credits"
+                android:textAppearance="@style/AboutTitles"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/creditsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="@string/credits_description" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

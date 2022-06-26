@@ -1,0 +1,29 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+
+        <ListPreference
+            android:icon="@drawable/ic_mode"
+            app:key="dark_mode_pref"
+            app:title="@string/dark_mode"
+            app:entries="@array/dark_mode_entries"
+            app:entryValues="@array/dark_mode_entries"
+            app:defaultValue="@string/follow_system"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+
+        android:title="Notifications">
+
+        <SwitchPreferenceCompat
+            android:icon="@drawable/ic_notifications"
+            android:defaultValue="false"
+            android:key="notification_switch_pref"
+            android:title="Daily notification"
+            app:summaryOff="Off"
+            app:summaryOn="On" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

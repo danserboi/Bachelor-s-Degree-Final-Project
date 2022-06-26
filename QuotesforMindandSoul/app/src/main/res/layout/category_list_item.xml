@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/category"
+            android:transitionName="categoryImageSharedTransition" />
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            style="@style/CategoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/categoryImage"
+            android:padding="8dp"
+            android:text="@string/title_placeholder"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

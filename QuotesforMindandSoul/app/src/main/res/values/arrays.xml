@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="background_gradients">
+        <item>@drawable/gradient_1</item>
+        <item>@drawable/gradient_2</item>
+        <item>@drawable/gradient_3</item>
+        <item>@drawable/gradient_4</item>
+        <item>@drawable/gradient_5</item>
+        <item>@drawable/gradient_6</item>
+        <item>@drawable/gradient_7</item>
+        <item>@drawable/gradient_8</item>
+        <item>@drawable/gradient_9</item>
+        <item>@drawable/gradient_10</item>
+        <item>@drawable/gradient_11</item>
+        <item>@drawable/gradient_12</item>
+        <item>@android:color/background_light</item>
+    </integer-array>
+
+    <integer-array name="background_gradients_dark">
+        <item>@drawable/gradient_1_dark</item>
+        <item>@drawable/gradient_2_dark</item>
+        <item>@drawable/gradient_3_dark</item>
+        <item>@drawable/gradient_4_dark</item>
+        <item>@drawable/gradient_5_dark</item>
+        <item>@drawable/gradient_6_dark</item>
+        <item>@drawable/gradient_7_dark</item>
+        <item>@drawable/gradient_8_dark</item>
+        <item>@drawable/gradient_9_dark</item>
+        <item>@drawable/gradient_10_dark</item>
+        <item>@drawable/gradient_11_dark</item>
+        <item>@drawable/gradient_12_dark</item>
+        <item>@android:color/background_dark</item>
+    </integer-array>
+
+    <string-array name="categories_titles">
+        <item>Age</item>
+        <item>Anger</item>
+        <item>Art</item>
+        <item>Business</item>
+        <item>Change</item>
+        <item>Courage</item>
+        <item>Death</item>
+        <item>Dreams</item>
+        <item>Education</item>
+        <item>Experience</item>
+        <item>Faith</item>
+        <item>Fear</item>
+        <item>Food</item>
+        <item>Forgiveness</item>
+        <item>Freedom</item>
+        <item>Friendship</item>
+        <item>God</item>
+        <item>Happiness</item>
+        <item>Health</item>
+        <item>History</item>
+        <item>Home</item>
+        <item>Hope</item>
+        <item>Humor</item>
+        <item>Inspiration</item>
+        <item>Jealousy</item>
+        <item>Knowledge</item>
+        <item>Life</item>
+        <item>Love</item>
+        <item>Marriage</item>
+        <item>Money</item>
+        <item>Motivation</item>
+        <item>Music</item>
+        <item>Nature</item>
+        <item>Patience</item>
+        <item>Peace</item>
+        <item>Poetry</item>
+        <item>Politics</item>
+        <item>Power</item>
+        <item>Relationship</item>
+        <item>Religion</item>
+        <item>Science</item>
+        <item>Society</item>
+        <item>Strength</item>
+        <item>Success</item>
+        <item>Technology</item>
+        <item>Time</item>
+        <item>Truth</item>
+        <item>War</item>
+    </string-array>
+
+    <array name="categories_images">
+        <item>@drawable/age</item>
+        <item>@drawable/anger</item>
+        <item>@drawable/art</item>
+        <item>@drawable/business</item>
+        <item>@drawable/change</item>
+        <item>@drawable/courage</item>
+        <item>@drawable/death</item>
+        <item>@drawable/dreams</item>
+        <item>@drawable/education</item>
+        <item>@drawable/experience</item>
+        <item>@drawable/faith</item>
+        <item>@drawable/fear</item>
+        <item>@drawable/food</item>
+        <item>@drawable/forgiveness</item>
+        <item>@drawable/freedom</item>
+        <item>@drawable/friendship</item>
+        <item>@drawable/god</item>
+        <item>@drawable/happiness</item>
+        <item>@drawable/health</item>
+        <item>@drawable/history</item>
+        <item>@drawable/home</item>
+        <item>@drawable/hope</item>
+        <item>@drawable/humor</item>
+        <item>@drawable/inspiration</item>
+        <item>@drawable/jealousy</item>
+        <item>@drawable/knowledge</item>
+        <item>@drawable/life</item>
+        <item>@drawable/love</item>
+        <item>@drawable/marriage</item>
+        <item>@drawable/money</item>
+        <item>@drawable/motivation</item>
+        <item>@drawable/music</item>
+        <item>@drawable/nature</item>
+        <item>@drawable/patience</item>
+        <item>@drawable/peace</item>
+        <item>@drawable/poetry</item>
+        <item>@drawable/politics</item>
+        <item>@drawable/power</item>
+        <item>@drawable/relationship</item>
+        <item>@drawable/religion</item>
+        <item>@drawable/science</item>
+        <item>@drawable/society</item>
+        <item>@drawable/strength</item>
+        <item>@drawable/success</item>
+        <item>@drawable/technology</item>
+        <item>@drawable/time</item>
+        <item>@drawable/truth</item>
+        <item>@drawable/war</item>
+    </array>
+
+    <array name="categories_images_1440p">
+        <item>@drawable/age_1440p</item>
+        <item>@drawable/anger_1440p</item>
+        <item>@drawable/art_1440p</item>
+        <item>@drawable/business_1440p</item>
+        <item>@drawable/change_1440p</item>
+        <item>@drawable/courage_1440p</item>
+        <item>@drawable/death_1440p</item>
+        <item>@drawable/dreams_1440p</item>
+        <item>@drawable/education_1440p</item>
+        <item>@drawable/experience_1440p</item>
+        <item>@drawable/faith_1440p</item>
+        <item>@drawable/fear_1440p</item>
+        <item>@drawable/food_1440p</item>
+        <item>@drawable/forgiveness_1440p</item>
+        <item>@drawable/freedom_1440p</item>
+        <item>@drawable/friendship_1440p</item>
+        <item>@drawable/god_1440p</item>
+        <item>@drawable/happiness_1440p</item>
+        <item>@drawable/health_1440p</item>
+        <item>@drawable/history_1440p</item>
+        <item>@drawable/home_1440p</item>
+        <item>@drawable/hope_1440p</item>
+        <item>@drawable/humor_1440p</item>
+        <item>@drawable/inspiration_1440p</item>
+        <item>@drawable/jealousy_1440p</item>
+        <item>@drawable/knowledge_1440p</item>
+        <item>@drawable/life_1440p</item>
+        <item>@drawable/love_1440p</item>
+        <item>@drawable/marriage_1440p</item>
+        <item>@drawable/money_1440p</item>
+        <item>@drawable/motivation_1440p</item>
+        <item>@drawable/music_1440p</item>
+        <item>@drawable/nature_1440p</item>
+        <item>@drawable/patience_1440p</item>
+        <item>@drawable/peace_1440p</item>
+        <item>@drawable/poetry_1440p</item>
+        <item>@drawable/politics_1440p</item>
+        <item>@drawable/power_1440p</item>
+        <item>@drawable/relationship_1440p</item>
+        <item>@drawable/religion_1440p</item>
+        <item>@drawable/science_1440p</item>
+        <item>@drawable/society_1440p</item>
+        <item>@drawable/strength_1440p</item>
+        <item>@drawable/success_1440p</item>
+        <item>@drawable/technology_1440p</item>
+        <item>@drawable/time_1440p</item>
+        <item>@drawable/truth_1440p</item>
+        <item>@drawable/war_1440p</item>
+    </array>
+
+    <string-array name="fonts">
+        <item>casual</item>
+        <item>sans-serif-black</item>
+        <item>cursive</item>
+        <item>sans-serif-smallcaps</item>
+        <item>serif</item>
+        <item>sans-serif-condensed</item>
+        <item>sans-serif-medium</item>
+        <item>serif-monospace</item>
+        <item>sans-serif-light</item>
+        <item>monospace</item>
+        <item>sans-serif-condensed-light</item>
+        <item>sans-serif</item>
+    </string-array>
+
+    <!-- Dark Mode Preference -->
+    <string-array name="dark_mode_entries">
+        <item>Follow system</item>
+        <item>Off</item>
+        <item>On</item>
+    </string-array>
+
+    <string-array name="dark_mode_values">
+        <item>follow_system</item>
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+</resources>

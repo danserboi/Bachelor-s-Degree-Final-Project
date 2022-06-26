@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".activities.AddQuoteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_quote_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/quote_input"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:layout_width="wrap_content"
+            android:layout_height="256dp"
+            android:autofillHints="@string/enter_quote_here"
+            android:ems="10"
+            android:hint="@string/enter_quote_here"
+            />
+        <LinearLayout
+            android:id="@+id/quote_source_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_marginTop="8dp"
+                android:id="@+id/cameraButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/change_background_text"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/change_background_text"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_baseline_image_search_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/author_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/enter_author_here"
+        android:ems="10"
+        android:hint="@string/enter_author_here"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/genre_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/enter_genre_here"
+        android:ems="10"
+        android:hint="@string/enter_genre_here"
+        android:inputType="textCapSentences" />
+
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collection:"
+            android:textStyle="bold"></TextView>
+        <Spinner
+            android:id="@+id/select_collection_spinner"
+            android:tooltipText="Gigi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/make_it_public"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Make It Public"></androidx.appcompat.widget.SwitchCompat>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/add_quote"
+        android:text="Add"
+        android:layout_marginTop="64dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+
+</LinearLayout>

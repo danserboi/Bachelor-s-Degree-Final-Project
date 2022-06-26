@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/words"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="4"
+            android:padding="8dp"
+            android:textSize="@dimen/quote_list_item_text_size" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:padding="8dp"
+            android:textSize="@dimen/quote_list_item_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_copy"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/copy_button_text" />
+
+            <ToggleButton
+                android:id="@+id/favoriteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/transition"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/transition"
+                android:textOff="@string/like_button_text"
+                android:textOn="@string/like_button_text" />
+
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_menu_share"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:text="@string/share_button_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

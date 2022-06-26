@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Quotes for Mind and Soul</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_quote_of_the_day">Quote of the Day</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_rate">Rate</string>
+    <string name="menu_feedback">Feedback</string>
+    <string name="menu_about">About</string>
+    <string name="menu_notifications">Notifications</string>
+
+    <string name="title_placeholder">Title</string>
+    <string name="copy_button_text">Copy</string>
+    <string name="like_button_text">Like</string>
+    <string name="share_button_text">Share</string>
+    <string name="change_background_text">Change Background</string>
+    <string name="category">Category</string>
+    <string name="random_quote">Random Quote</string>
+    <string name="search_quotes_by">Search quotes by:</string>
+    <string name="author">Author</string>
+    <string name="enter_your_input_here">Enter your input here</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="resulting_quotes">Resulting Quotes</string>
+
+    <string name="night_mode">Night Mode</string>
+    <string name="day_mode">Day Mode</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="dark_mode">Dark mode</string>
+    <string name="follow_system">Follow system</string>
+    <string name="add_quote">Add Quote</string>
+    <string name="enter_quote_here">Enter quote here</string>
+    <string name="enter_author_here">Enter author here</string>
+
+    <string name="purpose">Purpose</string>
+    <string name="app_description">This application aims to inspire, motivate and share the thoughts, ideas and feelings of some famous people.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_description">All the application permissions were required only for the application to work properly.</string>
+    <string name="credits">Credits</string>
+    <string name="credits_description">All the quotes are property of their respective authors.\n\nImages have been collected from freely-usable images sources like unsplash.com, pexels.com, pixabay.com. Use of imagery does not imply any endorsement.\n\nWe thank the people who provided these things for free. </string>
+    <string name="loading">Loading…</string>
+    <string name="added_to_favorites">Quote added to favorites.</string>
+    <string name="removed_from_favorites">Quote removed from favorites.</string>
+    <string name="check_connection">Check your internet connection and try again.</string>
+    <string name="failed_to_load">Failed to properly load quotes.</string>
+    <string name="channel_name">Daily Quote Notification</string>
+    <string name="notification_description">Daily notification with random quote.</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="share_chooser_title">Share this quote with:</string>
+    <string name="share_subject">Quotes for Mind and Soul App Quote</string>
+    <string name="text_not_entered">You did not enter any text.</string>
+    <string name="dialog_add_button">Add</string>
+    <string name="empty_fields">You did not complete both input fields.</string>
+    <string name="quote_liked">Quote has already been liked.</string>
+    <string name="share_app_subject">Quotes for Mind and Soul App</string>
+    <string name="no_playstore">You don\'t have any app that can open this link.</string>
+    <string name="chooser_title_feedback">Contact us</string>
+    <string name="feedback_mail_address">serboidan@yahoo.com</string>
+    <string name="feedback_subject">Quotes for Mind and Soul App Feedback</string>
+    <string name="copied_to_clipboard">Quote copied to clipboard.</string>
+    <string name="share_app_text">Hi, I am inspired by this beautiful application and I want you to check it out: </string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="hint_lastname">Last Name</string>
+    <string name="login">LOG IN</string>
+    <string name="register">Register</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">Log Out</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="dont_have_account">Don\'t have an account yet? Go and register!</string>
+    <string name="go_back_to_login">Back to login screen.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="code">Code</string>
+    <string name="collections">Collections</string>
+    <string name="enter_genre_here">Enter genre here</string>
+    <string name="genre">Genre</string>
+    <string name="delete">Delete</string>
+    <string name="my_quotes">My Quotes</string>
+    <string name="resend_validation_email">Resend Validation Email</string>
+
+</resources>
