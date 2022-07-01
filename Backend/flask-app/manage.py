@@ -14,7 +14,7 @@ cli = FlaskGroup(app)
 @cli.command()
 def test():
     """Runs unit tests."""
-    tests = unittest.TestLoader().discover('tests', pattern='test_*.py')
+    tests = unittest.TestLoader().discover('tests', pattern='users_blueprint_tests.py')
     unittest.TextTestRunner(verbosity=2).run(tests)
 
 
@@ -26,7 +26,7 @@ def test_coverage():
         branch=True,
     )
     code_coverage.start()
-    tests = unittest.TestLoader().discover('tests', pattern='test_*.py')
+    tests = unittest.TestLoader().discover('tests', pattern='users_blueprint_tests.py')
     result = unittest.TextTestRunner(verbosity=2).run(tests)
     if result.wasSuccessful():
         code_coverage.stop()
@@ -55,20 +55,10 @@ def db_drop():
     db.drop_all()
 
 
-@cli.command('db_populate')
-def db_populate():
-    """Populates the database with a small initial set of data."""
-    user1 = User(email="ibrahim.trello@gmail.com", password="Qwer1234", first_name="Ibrahim", last_name="Trello")
-    user2 = User(email="anonim@anonim.com", password="ewqr5421REA", first_name="Anonim", last_name="Anonimus")
-    with session_scope():
-        db.session.add(user1)
-        db.session.add(user2)
-
-
 @cli.command('db_add_quotes')
 def db_add_quotes():
-    """ Populates the database with all the Quotes"""
-    user = User(email="ibrahim.trello@gmail.com", password="Qwer1234", first_name="Ibrahim", last_name="Trello", admin=True)
+    """ Populates the database with all the quotes"""
+    user = User(email="danserboi@gmail.com", password="Qwer1234", first_name="Florea-Dan", last_name="Șerboi", admin=True)
     try:
         with session_scope():
             db.session.add(user)

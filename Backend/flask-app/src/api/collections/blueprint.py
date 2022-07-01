@@ -7,6 +7,7 @@ from src.api.decorators import auth_token_required
 from src.api.exceptions import BadRequestException, NotFoundException, ConflictException, ForbiddenException
 from src.extensions import db
 from src.models.collection import Collection
+from src.models.quote import Quote
 from src.utils.db_access import session_scope
 
 collections_blueprint = Blueprint('collections', __name__)
@@ -91,5 +92,34 @@ def delete_collection(user_id, collection_id):
 
     with session_scope():
         db.session.delete(collection)
+
+    return Response(status=200)
+
+@collections_blueprint.route('/collections/<string:collection_name>/quotes/<int:quote_id>', methods=['POST'])
+@auth_token_required
+def add_quote_in_collection(user_id, quote_id, collection_name):
+    quote = Quote.get(quote_id)
+    if not quote:
+        raise NotFoundException('No quote with this id.')
+    collection = db.session.query(Collection).filter_by(name=collection_name, owner_id=user_id).first()
+    if not collection:
+        raise NotFoundException('No collection with this name.')
+    with session_scope():
+        collection.quotes.append(quote)
+
+    return Response(status=200)
+
+
+@collections_blueprint.route('/collections/<string:collection_name>/quotes/<int:quote_id>', methods=['DELETE'])
+@auth_token_required
+def remove_quote_from_collection(user_id, quote_id, collection_name):
+    quote = Quote.get(quote_id)
+    if not quote:
+        raise NotFoundException('No quote with this id.')
+    collection = db.session.query(Collection).filter_by(name=collection_name, owner_id=user_id).first()
+    if not collection:
+        raise NotFoundException('No collection with this name.')
+    with session_scope():
+        collection.quotes.remove(quote)
 
     return Response(status=200)

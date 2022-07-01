@@ -4,8 +4,8 @@ from src.utils.datetime_utils import utc_now, datetime_aware_from_timestamp
 
 class BlacklistedToken(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    token = db.Column(db.String(500), unique=True, nullable=False)
-    blacklisted_on = db.Column(db.DateTime, default=utc_now)
+    token = db.Column(db.String(255), unique=True, nullable=False)
+    blacklist_time = db.Column(db.DateTime, default=utc_now)
     expires_at = db.Column(db.DateTime, nullable=False)
 
     def __init__(self, token, expires_at):
@@ -14,13 +14,12 @@ class BlacklistedToken(db.Model):
 
     def __repr__(self):
         return (
-            f"BlacklistedToken: token={self.token}, blacklisted_on={self.blacklisted_on}, id={self.id}"
+            f"BlacklistedToken: token={self.token}, blacklist_time={self.blacklist_time}, expires_at={self.expires_at}"
         )
 
     @classmethod
-    def check_blacklist(cls, token):
-        exists = cls.query.filter_by(token=token).first()
-        return True if exists else False
+    def is_blacklisted(cls, token):
+        return True if cls.query.filter_by(token=token).first() else False
 
     @classmethod
     def delete_all_by_expiration_date(cls):

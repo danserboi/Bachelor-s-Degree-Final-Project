@@ -167,31 +167,4 @@ def dislike_quote(user_id, quote_id):
         return {'message': "This quote didn't have any like from you."}, 400
 
 
-@quotes_blueprint.route('/quotes/<int:quote_id>/collections/<string:collection_name>', methods=['POST'])
-@auth_token_required
-def add_quote_in_collection(user_id, quote_id, collection_name):
-    quote = Quote.get(quote_id)
-    if not quote:
-        raise NotFoundException('No quote with this id.')
-    collection = db.session.query(Collection).filter_by(name=collection_name, owner_id=user_id).first()
-    if not collection:
-        raise NotFoundException('No collection with this name.')
-    with session_scope():
-        collection.quotes.append(quote)
 
-    return Response(status=200)
-
-
-@quotes_blueprint.route('/quotes/<int:quote_id>/collections/<string:collection_name>', methods=['DELETE'])
-@auth_token_required
-def remove_quote_from_collection(user_id, quote_id, collection_name):
-    quote = Quote.get(quote_id)
-    if not quote:
-        raise NotFoundException('No quote with this id.')
-    collection = db.session.query(Collection).filter_by(name=collection_name, owner_id=user_id).first()
-    if not collection:
-        raise NotFoundException('No collection with this name.')
-    with session_scope():
-        collection.quotes.remove(quote)
-
-    return Response(status=200)

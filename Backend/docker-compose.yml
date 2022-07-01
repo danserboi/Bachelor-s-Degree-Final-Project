@@ -25,23 +25,24 @@ services:
       - "8080:8080"
     restart: always
 
-  flask-app:
+  api:
     depends_on:
       - db
+      - rabbitmq
     build: ./flask-app
-    image: flask-app
-    container_name: flask-app
+    image: api
+    container_name: api
     env_file:
       - .env
     expose:
       - "5000"
     volumes:
-      - ./flask-app:/quotes-for-mind-and-soul-flask-api
+      - ./flask-app:/src
     restart: always
 
   nginx:
     depends_on:
-      - flask-app
+      - api
     image: nginx:1.22.0
     container_name: nginx
     ports:
@@ -54,8 +55,6 @@ services:
     restart: always
 
   rabbitmq:
-    depends_on:
-      - flask-app
     image: rabbitmq:3.10.5-management
     container_name: rabbitmq
     environment:
@@ -63,15 +62,12 @@ services:
       - RABBITMQ_DEFAULT_PASS=rabbitmq
     expose:
       - "5672"
-    ports:
-      - "15672:15672"
+      - "15672"
     volumes:
       - celery-broker-data:/data/rabbitmq
     restart: always
 
   redis:
-    depends_on:
-      - flask-app
     image: redis:7.0.0
     container_name: redis
     expose:
@@ -91,7 +87,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./flask-app:/quotes-for-mind-and-soul-flask-api
+      - ./flask-app:/src
     restart: always
 
   celery-beat:
@@ -105,7 +101,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./flask-app:/quotes-for-mind-and-soul-flask-api
+      - ./flask-app:/src
     restart: always
 
 volumes:

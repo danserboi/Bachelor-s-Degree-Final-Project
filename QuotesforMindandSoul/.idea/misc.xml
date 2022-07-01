@@ -12,6 +12,8 @@
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/background_splash.xml" value="0.139" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/background_with_border.xml" value="0.2025" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/borderless_button.xml" value="0.1865" />
+        <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_11_dark.xml" value="0.267" />
+        <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_12.xml" value="0.267" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_12_dark.xml" value="0.1865" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_3_dark.xml" value="0.1865" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_4.xml" value="0.1865" />
@@ -19,6 +21,7 @@
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_6.xml" value="0.1865" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_7.xml" value="0.1865" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_8_dark.xml" value="0.1865" />
+        <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_animation.xml" value="0.1835" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_center.xml" value="0.1865" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_end.xml" value="0.1865" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/drawable/gradient_splash.xml" value="0.1865" />
@@ -79,6 +82,7 @@
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/create_collection_dialog.xml" value="0.12760416666666666" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/edit_quote_dialog.xml" value="0.264" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/forgot_password_dialog.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/fragment_account_recovery.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/fragment_container.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/fragment_home.xml" value="0.17980072463768115" />
         <entry key="..\:/Users/danse/Desktop/quotes_mobile_app/QuotesforMindandSoul/app/src/main/res/layout/fragment_login.xml" value="0.264" />

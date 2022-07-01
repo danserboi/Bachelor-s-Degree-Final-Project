@@ -114,7 +114,7 @@ public interface RetrofitAPI {
     Call<Void> updateCollection(@Header("Authorization") String authHeader, @Path("collection_id") Integer id, @Body NameWrapper nameWrapper);
 
     @Headers({"Accept: application/json"})
-    @POST("/quotes/{quote_id}/collections/{collection_name}")
+    @POST("/collections/{collection_name}/quotes/{quote_id}")
     Call<Void> addQuoteToCollection(@Header("Authorization") String authHeader, @Path("quote_id") Integer id, @Path("collection_name") String name);
 
     @Headers({"Accept: application/json"})

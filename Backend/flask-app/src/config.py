@@ -46,4 +46,5 @@ class DevelopmentConfig(Config):
 
 
 class ProductionConfig(Config):
+    BCRYPT_LOG_ROUNDS = 12
     TOKEN_EXPIRE_HOURS=168

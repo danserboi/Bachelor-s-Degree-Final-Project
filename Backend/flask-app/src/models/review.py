@@ -41,7 +41,7 @@ class Review(db.Model):
             'rating': self.rating,
             'quote_id': self.quote_id,
             'username': self.user.first_name + " " + self.user.last_name,
-            'timestamp': int(datetime.timestamp(self.created_at))
+            'timestamp': int(dAatetime.timestamp(self.created_at))
         }
 
         return info_dict
